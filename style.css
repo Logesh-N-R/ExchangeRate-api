@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@200;400&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background: url(img/bg-1.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: "Georama", sans-serif;
+    color: #222;
+}
+
+h2 {
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bolder;
+    margin: 40px 20px 20px;
+}
+
+.from,
+.to {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(205, 73, 98, 1) 100%);
+    border: 1px solid white;
+    padding: 0 5px 30px 5px;
+    border-radius: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    box-shadow: 0 0 10px 0 black;
+}
+.from:hover,
+.to:hover{
+    transform: scale(1.01);
+    border: 1px solid black;
+    box-shadow: 0 0 10px 0 white;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+
+.calcContain {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.calcContain input {
+    width: 400px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.calcContain select {
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calcContain input:focus,
+.calcContain select:focus {
+    outline: none;
+    user-select: none;
+    border: 1px solid red;
+}
+
+.equal {
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.content {
+    text-align: center;
+    font-size: 20px;
+    color: thistle;
+    max-width: 1000px;
+    margin:40px auto 0;
+    font-weight: bolder;
+}
+
+.main {
+    padding: 20vh 0 30px 0;
+}
+
+.main h1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 8px black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    padding: 0.8rem;
+    background-color: rgb(231, 207, 155);
+    border: 1px solid black;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.navbar-nav li:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.swap {
+    text-align: center;
+    margin: 10px;
+}
+
+.swap i {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: gray;
+}
+
+@media (max-width: 992px) {
+    .main h1 {
+        font-size: 60px;
+    }
+
+    .calcContain input {
+        width: 200px;
+        padding: 7px 15px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+
+    }
+
+    .calcContain select {
+        width: 100px;
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .calcContain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calcContain input {
+        width: 250px;
+        padding: 7px 14px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .calcContain select {
+        width: 90px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    .calcContain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calcContain input {
+        width: 250px;
+        padding: 7px 14px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .calcContain select {
+        width: 90px;
+        padding: 7px 14px;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+}

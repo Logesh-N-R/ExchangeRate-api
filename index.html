@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate</title>
+    <link rel=" icon" href="img/logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="50px" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Address</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="all">
+        <div class="main">
+            <h1>Exchange The Currency Value!</h1>
+        </div>
+        <div class="calcContain">
+            <div class="from">
+                <h2>First Currency</h2>
+                <input type="number" min="0" id="from-amount" placeholder="0" value="1" />
+                <select id="from-select">
+                    <option id="from-option" key="" value=""></option>
+                </select>
+            </div>
+            <div class="to">
+                <h2>Second Currency</h2>
+                <input type="number" min="0" id="to-amount" placeholder="0" value="1" />
+                <select id="to-select">
+                    <option id="to-option" key="" value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <p id="call">The Original Currency Exchange Rates Calculator. Working live with market changes. Select the currency and change the value you want to view!!! You can choose 168 different currency types</p>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
